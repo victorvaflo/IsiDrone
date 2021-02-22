@@ -1,0 +1,24 @@
+les etapes pour extraire les images du projet et le placer dans votre machine
+ afin d'eviter apres chaque deploiement de le uploader a nouveau dans le projet.
+
+etape1:
+	-Supprimer le dossier products dans votre repertoire images
+ 
+	- copier le dossier isidrone ci-dessus a la racine du repertoire c de votre 
+	machine
+
+etape2: - modifier le server.xml de Tomcat
+	 (il se trouve dans la partie "services" dans netBeans)
+	
+En details:
+
+1. Chemin: "Services" -> "Servers" - > "Apache Tomcat or TomEE" -> 
+-> click droite -> "Edit server.xml" 
+
+2. Juste avant la balise fermente du </Host> ajouter la ligne suivante :
+
+	<Context docBase="C:\isidrone\products\img" path="/ISIDrone/images/products"/>
+
+3. Sur "Apache Tomcat or TomEE" click droite "Restart".
+ 
+4. Faire un rafraichissement de votre application dans le navigateur.

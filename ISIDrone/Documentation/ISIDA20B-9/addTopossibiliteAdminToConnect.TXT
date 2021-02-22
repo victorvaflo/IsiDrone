@@ -1,0 +1,2 @@
+verifier si c'est un admin connecte et retirer le lien historique des commandes dans la page 
+loginState.jsp

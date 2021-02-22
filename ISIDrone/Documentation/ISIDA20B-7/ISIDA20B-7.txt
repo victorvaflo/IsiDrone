@@ -1,0 +1,13 @@
+Commande a Effectuer pour ajouter une colonne, isShipped , qui correspond à la table order.
+
+ALTER TABLE `order` ADD isShipped INT(11)
+
+Commande a Effectuer pour donner une valeur predetermine a la colonne isShiped:
+
+Update `order` set isShipped = 0;
+
+ATTENTION!!! si erreur est cause par same mode decoche safe update dans edit->preferences ->sqlEditor-safe updates ET REFAIRE la commande: Update `order` set isShipped = 0;
+
+Commande a effectuer pour que la table order ne sois pas null. (valeur 0 ou 1)
+
+ALTER TABLE `order` modify isShipped int not null

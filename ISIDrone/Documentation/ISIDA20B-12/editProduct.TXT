@@ -1,0 +1,5 @@
+-creation de page editProduct.jsp
+
+-Seul les admin ont droit a cette page
+
+-modifie un produit en fonction de son identifiant unique

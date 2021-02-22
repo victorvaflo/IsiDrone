@@ -1,0 +1,59 @@
+Commande a Effectuer pour ajouter une colonne qui correspond à la table User.
+
+ALTER TABLE user ADD type_user VARCHAR(255)
+
+Commande a Effectuer pour les user qui se trouven dans la bd soint passe a type user client
+
+UPDATE user SET type_user= 'client'
+
+Commande a Effectuer pour ajouter le admin. Compte inséré via script
+
+INSERT INTO address (no, appt, street, zip, city, state, country) VALUES ('1200', '2','Victoria' , 'H1A 1A1', 'Montreal', 'Qc', 'Canada');
+INSERT INTO user (lastName, firstName, email, password, ship_address_id,type_user) VALUES ('Team','Blue', 'teamblue@mail.com', '7d6bd0d7501b3dbd1924fe96f4e5385b165af3d4',LAST_INSERT_ID(), 'admin');
+
+**************
+REMEMBER!!!!!
+user:teamblue@mail.com
+pwd:Abc123***
+**************
+
+
+
+commande pr suivre la trace du fichier de log a partir du dossier webapps de tomcat:
+
+tail -f ../logs/catalina.out
+
+
+commande pr suivre la trace du fichier de log de n'importe ou:
+
+tail -f /opt/tomcat/latest/logs/catalina.out
+
+
+chemin pour linux
+
+ cd /devint/ISIDrone
+ 1001  ll
+ 1002  mkdir v1.4.2 *
+ 1003  ll
+ 1004  cd v1.4.2    *
+ 1005  ll
+ 1006  cd /opt/tomcat/latest/webapps/
+ 1007  service tomcat stop
+ 1008  ll
+ 1009  rm -rf ISIDrone
+ 1010  ll
+ 1011  rm ISIDrone.war
+ 1012  ll
+ 1013  cp /devint/ISIDrone/v1.4.2/ISIDrone-0.0.1-SNAPSHOT.war ISIDrone.war *
+ 1014  ll
+ 1015  service tomcat start
+ 1016  tail -f /opt/tomcat/latest/logs/catalina.out
+
+
+verifier que l'application fonctionne ds un navigateur
+
+port 8090 lien http://localhost:8090/ISIDrone
+
+
+
+

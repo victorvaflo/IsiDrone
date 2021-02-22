@@ -1,0 +1,3 @@
+Pour avoir l'access vers la page de listProduits.jsp 
+pour user "admin" il faut se connecter comme "admin" 
+puis dans le NAV choisir un lien correspondant.

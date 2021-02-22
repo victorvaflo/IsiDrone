@@ -1,0 +1,6 @@
+Pour ajouter une categorie il faut se connecter comme "admin"
+puis dans le NAV (menu) choisir un lien correspondant.
+
+ALTER table category add isActive int not null;
+
+

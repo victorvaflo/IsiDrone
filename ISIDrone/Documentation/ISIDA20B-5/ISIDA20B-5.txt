@@ -1,0 +1,21 @@
+﻿pour cree la column
+faire  
+{
+Alter table category add isActive int;
+}
+
+
+pour mettre tous les category actives 
+pour mettre tous les category actives (si erreur est cause par same mode decoche safe update dans edit->preferences ->sqlEditor->safe updates ) et refresh la base de donne
+finalement faire 
+{
+Update category set isActive = 1;
+}
+
+
+
+pour pas accepter null
+{
+alter table category modify isActive int not null
+}
+

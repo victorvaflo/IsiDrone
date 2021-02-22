@@ -1,0 +1,1 @@
+﻿ajout de  victor.jpg , isabel.jpg , yannick.jpg et ahmed.jpg dans le dossir images/about  et  ajout de images avec noms dans la partie about dans about.jsp

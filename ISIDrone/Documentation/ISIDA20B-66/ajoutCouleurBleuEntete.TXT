@@ -1,0 +1,3 @@
+ajout de la couleur bleu a l'entete.
+
+sur la classe .panel-default  .panel-body 
